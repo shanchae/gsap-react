@@ -74,9 +74,7 @@ const Hero = () => {
         })
     })
 
-    useEffect(() => {
-        console.log(`Loaded videos: ${loadedVideos}, Total videos: ${totalVideos}`);
-        
+    useEffect(() => {        
         if (loadedVideos === totalVideos - 1) {
             setIsLoading(false)
         }
