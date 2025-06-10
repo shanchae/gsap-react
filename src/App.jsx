@@ -1,14 +1,13 @@
-import React from "react";
+import Hero from "./components/Hero";
 
 const App = () => {
-  return <div>
-    <h1 className="text-3xl font-bold underline text-center mt-10 text-violet-300">
-      Hello, world!
-    </h1>
-    <p className="text-center mt-4 font-circular-web">
-      This is a simple React application styled with Tailwind CSS.
-    </p>
-  </div>;
+  return (
+    <main className="relative min-h-screen w-screen overflow-x-hidden">
+      <Hero />
+
+      <section className="z-0 min-h-screen bg-blue-100"/>
+    </main>
+  );
 };
 
 export default App;
